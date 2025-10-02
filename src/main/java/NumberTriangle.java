@@ -96,7 +96,6 @@ public class NumberTriangle {
         }
         for (int i = 0; i < path.length(); i++) {
             char direction = path.charAt(i);
-
             if (direction == 'l') {
                 current = current.left;
             } else if (direction == 'r') {
@@ -127,7 +126,6 @@ public class NumberTriangle {
         // are more convenient to work with when reading the file contents.
         InputStream inputStream = NumberTriangle.class.getClassLoader().getResourceAsStream(fname);
         BufferedReader br = new BufferedReader(new InputStreamReader(inputStream));
-
         List<NumberTriangle[]> rows = new ArrayList<>();
         // will need to return the top of the NumberTriangle,
         // so might want a variable for that.
